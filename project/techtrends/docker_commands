@@ -1,0 +1,19 @@
+
+PS C:\Users\Ananya Singh\OneDrive\Documents\TechTrends\nd064_course_1\project\techtrends> docker run -d -p 7111:3111 --name techtrends_container techtrends
+d5307028d6bec44d988e4614d1be9b2d36b0d455070f298a9276f3e1cc88ae6e
+PS C:\Users\Ananya Singh\OneDrive\Documents\TechTrends\nd064_course_1\project\techtrends> docker ps
+CONTAINER ID   IMAGE        COMMAND           CREATED         STATUS         PORTS                    NAMES
+d5307028d6be   techtrends   "python app.py"   2 minutes ago   Up 2 minutes   0.0.0.0:7111->3111/tcp   techtrends_container
+PS C:\Users\Ananya Singh\OneDrive\Documents\TechTrends\nd064_course_1\project\techtrends> docker logs d5307028d6be
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+172.17.0.1 - - [14/Aug/2024 10:49:04] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [14/Aug/2024 10:49:04] "GET /static/css/main.css HTTP/1.1" 200 -
+172.17.0.1 - - [14/Aug/2024 10:49:04] "GET /favicon.ico HTTP/1.1" 404 -
+PS C:\Users\Ananya Singh\OneDrive\Documents\TechTrends\nd064_course_1\project\techtrends> 
